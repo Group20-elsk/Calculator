@@ -22,7 +22,7 @@ namespace CalculatorUnitTest
         [Test]
         public void TestSubtractMethod()
         {
-            Assert.That(_calculator.Subtract(4, 2), Is.EqualTo(2));
+            Assert.That(_calculator.Subtract(3, 2), Is.EqualTo(1));
         }
         [Test]
         public void TestMultiplyMethod()
