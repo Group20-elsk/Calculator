@@ -16,7 +16,7 @@ namespace CalculatorUnitTest
         public void TestAddMethod()
         {
             //ACT og ASSERT
-            Assert.That(_calculator.Add(2, 2), Is.EqualTo(4));
+            Assert.That(_calculator.Add(4, 2), Is.EqualTo(6));
         }
 
         [Test]
