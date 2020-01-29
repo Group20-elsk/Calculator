@@ -29,5 +29,6 @@ namespace CalculatorUnitTest
             double result = Math.Pow(x,exp);
             return result;
         }
+
     }
 }
