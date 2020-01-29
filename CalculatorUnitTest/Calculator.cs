@@ -29,5 +29,10 @@ namespace CalculatorUnitTest
             double result = Math.Pow(x,exp);
             return result;
         }
+
+        public double Divide(double a, double b)
+        {
+            return a / b;
+        }
     }
 }
