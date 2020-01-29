@@ -43,5 +43,12 @@ namespace CalculatorUnitTest
             double resulat = _calculator.Power(a, b);
             Assert.That(resulat, Is.EqualTo(4));
         }
+
+        [Test]
+        public void TestDivideMethod()
+        {
+            
+            Assert.That(_calculator.Divide(4,2), Is.EqualTo(2));
+        }
     }
 }

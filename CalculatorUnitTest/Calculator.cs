@@ -30,5 +30,9 @@ namespace CalculatorUnitTest
             return result;
         }
 
+        public double Divide(double a, double b)
+        {
+            return a / b;
+        }
     }
 }
