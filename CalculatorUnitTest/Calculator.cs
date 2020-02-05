@@ -6,39 +6,37 @@ namespace CalculatorUnitTest
 {
     public class Calculator
     {
-        private double result = 0;
-        
+        public double Accumulator { get; private set; }
+
         public double Add(double a, double b)
         {
-            result=a + b;
-            return result;
+            Accumulator = a + b;
+            return Accumulator;
         }
 
         public double Subtract(double a, double b)
         {
-            result = a - b;
-            return result;
+            Accumulator = a - b;
+            return Accumulator;
 
         }
         public double Multiply(double a, double b)
-        { 
-            result = a * b;
-            return result;
+        {
+            Accumulator = a * b;
+            return Accumulator;
         }
 
         public double Power(double x, double exp)
         {
-            result = Math.Pow(x,exp);
-            return result;
+            Accumulator = Math.Pow(x,exp);
+            return Accumulator;
         }
 
         public double Divide(double a, double b)
         {
-            result = a / b;
-            return result;
+            Accumulator = a / b;
+            return Accumulator;
         }
-
-        public double Accumulator { get; private set; }
 
         public void Clear()
         {
