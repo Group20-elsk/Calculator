@@ -50,5 +50,19 @@ namespace CalculatorUnitTest
             
             Assert.That(_calculator.Divide(4,2), Is.EqualTo(2));
         }
+
+        [Test]
+        public void TestAccumulatorProp()
+        {
+            Assert.That(_calculator.Add(2, 2), Is.EqualTo(_calculator.Accumulator));
+        }
+
+        [Test]
+        public void TestClearMethod()
+        {
+            _calculator.Clear();
+            double number =_calculator.Accumulator;
+            Assert.That(number, Is.EqualTo(0));
+        }
     }
 }
