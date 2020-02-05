@@ -34,8 +34,23 @@ namespace CalculatorUnitTest
 
         public double Divide(double a, double b)
         {
-            Accumulator = a / b;
-            return Accumulator;
+            try
+            {
+                if (b == 0)
+                {
+                    throw new DivideByZeroException("Divided by zero");
+                }
+
+                Accumulator = a / b;
+                return Accumulator;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
         }
 
         public void Clear()
