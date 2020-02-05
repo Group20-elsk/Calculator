@@ -1,7 +1,7 @@
 using System;
 using NUnit.Framework;
 
-namespace CalculatorUnitTest
+namespace CalculatorGroup20
 {
     public class Tests
     {
